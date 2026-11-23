@@ -7,7 +7,7 @@
 # OBJETIVO:
 # Compreender o funcionamento das estruturas de repetição
 # while e for, aprender a percorrer sequências e aplicar
-# esses conhecimentos na calculadora desenvolvida nas aulas.
+# esses conhecimentos em exemplos práticos e na calculadora.
 
 
 # %%
@@ -152,7 +152,7 @@ while True:
 # manualmente um contador para percorrer todos os elementos.
 
 
-# EXEMPLO 1:
+# EXEMPLO:
 # Percorrendo uma lista e imprimindo cada elemento.
 
 lista_numeros = [10, 25, 3, 80, 7]
@@ -168,7 +168,7 @@ for numero in lista_numeros:
 
 # O laço for também pode percorrer os caracteres de uma string.
 #
-# A cada iteração, a variável caractere recebe uma letra
+# A cada iteração, a variável caractere recebe um caractere
 # da palavra.
 
 palavra = "Python"
@@ -203,5 +203,63 @@ print(f"A letra 'a' aparece {i} vezes na palavra.")
 
 # %%
 # ============================================================
-# FIM DA AULA
+# 7. FUNÇÃO RANGE()
 # ============================================================
+
+# A função range() permite gerar uma sequência de números
+# inteiros, sendo bastante utilizada em conjunto com o for.
+#
+# SINTAXE:
+# range(início, fim, passo)
+#
+# início -> Número em que a sequência começa (inclusivo).
+# fim    -> Número em que a sequência termina (exclusivo).
+# passo  -> Intervalo entre os números.
+#
+# O início e o passo são opcionais.
+# Quando não informamos o início, o padrão é 0.
+# Quando não informamos o passo, o padrão é 1.
+
+
+# EXEMPLO 1:
+# Gera números de 0 a 4.
+
+for numero in range(5):
+    print(numero)
+
+
+# EXEMPLO 2:
+# Gera números de 1 a 10.
+
+for numero in range(1, 11):
+    print(numero)
+
+
+# EXEMPLO 3:
+# Gera números pares de 0 a 10.
+
+for numero in range(0, 11, 2):
+    print(numero)
+
+
+# %%
+# ============================================================
+# 8. TABUADA COM FOR E RANGE()
+# ============================================================
+
+# A tabuada é um exemplo prático da utilização dos laços
+# de repetição.
+#
+# Neste exemplo, utilizamos range() para gerar os números
+# de 1 a 10 e realizar as multiplicações.
+
+
+num_tabuada = float(
+    input("Qual tabuada você deseja ver? (Digite um número de 1 a 10): ")
+)
+
+print(f"\nTabuada do {num_tabuada}:")
+
+for i in range(1, 11):
+    resultado = num_tabuada * i
+    print(f"{num_tabuada} x {i} = {resultado}")
