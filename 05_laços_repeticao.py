@@ -4,10 +4,13 @@
 # INTRODUÇÃO AOS LAÇOS DE REPETIÇÃO
 # ============================================================
 
-# Os laços de repetição permitem executar um bloco de código
-# várias vezes, de acordo com uma condição ou uma sequência.
+# OBJETIVO:
+# Compreender o funcionamento das estruturas de repetição
+# while e for, aprender a percorrer sequências e aplicar
+# esses conhecimentos na calculadora desenvolvida nas aulas.
 
 
+# %%
 # ============================================================
 # 1. LAÇO WHILE
 # ============================================================
@@ -21,11 +24,13 @@
 #
 # Assim como o if, o while utiliza uma condição que pode ser
 # verdadeira ou falsa. A diferença é que o if executa o bloco
-# uma única vez, enquanto o while permite repetir sua execução
-# enquanto a condição permanecer verdadeira.
+# uma única vez quando a condição é verdadeira, enquanto o
+# while permite repetir sua execução enquanto a condição
+# permanecer verdadeira.
 
 
-# EXEMPLO: 
+# EXEMPLO:
+# Imprimir os números de 0 a 4.
 
 i = 0
 
@@ -45,17 +50,24 @@ while i < 5:
 # Para isso, utilizamos um contador (i) para controlar a posição
 # de cada elemento.
 #
-# A função len() retorna a quantidade de elementos da lista.
-# O índice começa em 0, por isso utilizamos i < len(lista).
+# A função len() retorna a quantidade de elementos de uma
+# sequência ou coleção.
+#
+# Como os índices começam em 0, utilizamos a condição
+# i < len(lista) para percorrer todas as posições.
+
 
 lista = [10, 25, 3, 80, 7]
 
 i = 0
 
-while i < len(lista):  # len() retorna a quantidade de elementos de uma sequencia ou coleção.
+while i < len(lista):
     print(lista[i])
-    i += 1  # Avança para a próxima posição da lista. A expressão i += 1 é equivalente a i = i + 1, 
-            # ou seja, incrementa o valor de i em 1.
+    i += 1
+
+    # i += 1 é equivalente a i = i + 1.
+    # Essa operação incrementa o valor de i em 1,
+    # permitindo avançar para a próxima posição da lista.
 
 
 # %%
@@ -114,20 +126,35 @@ while True:
     # Pergunta se o usuário deseja realizar outra operação.
 
     continuar = input("Deseja realizar outra operação? (s/n): ").strip().lower()
-    # strip() remove espaços em branco no início e no final da string.
+
+    # strip() remove espaços em branco no início e no final
+    # da string.
+    #
+    # lower() converte os caracteres para letras minúsculas.
+
     if continuar != 's':
         print("Encerrando a calculadora. Até logo!")
-        break  # Interrompe o laço while e encerra a calculadora
+        break  # Interrompe o laço while.
 
 
 # %%
 # ============================================================
-# 1. LAÇO FOR
+# 4. LAÇO FOR
 # ============================================================
-# O laço for é utilizado para percorrer uma sequência de elementos, como listas, tuplas ou strings.
-# A cada iteração, o laço for atribui o próximo elemento da sequência a uma
-# variável e executa o bloco de código associado.
-# Exemplo: percorrer uma lista de números e imprimir cada elemento.
+
+# O laço for é utilizado para percorrer os elementos de uma
+# sequência ou coleção, como listas, tuplas, conjuntos e strings.
+#
+# A cada iteração, a variável utilizada no for recebe o próximo
+# elemento da sequência e executa o bloco de código associado.
+#
+# Diferentemente do while, não precisamos controlar
+# manualmente um contador para percorrer todos os elementos.
+
+
+# EXEMPLO 1:
+# Percorrendo uma lista e imprimindo cada elemento.
+
 lista_numeros = [10, 25, 3, 80, 7]
 
 for numero in lista_numeros:
@@ -135,17 +162,46 @@ for numero in lista_numeros:
 
 
 # %%
-# Outro exemplo: percorrer uma string e imprimir cada caractere.
+# ============================================================
+# 5. PERCORRENDO UMA STRING COM FOR
+# ============================================================
+
+# O laço for também pode percorrer os caracteres de uma string.
+#
+# A cada iteração, a variável caractere recebe uma letra
+# da palavra.
+
 palavra = "Python"
 
 for caractere in palavra:
     print(caractere)
 
+
 # %%
-# Mais um exemplo: Imprimir a quantidade de caractees A na palavra "banana".
+# ============================================================
+# 6. CONTANDO CARACTERES COM FOR E IF
+# ============================================================
+
+# Podemos combinar estruturas de repetição e condicionais
+# para realizar análises sobre uma sequência.
+#
+# Neste exemplo, contamos quantas vezes a letra "a" aparece
+# na palavra "banana".
+#
+# A cada iteração, o for verifica um caractere.
+# Se o caractere for igual a "a", incrementamos o contador.
+
 
 i = 0
+
 for caractere in "banana":
     if caractere == "a":
         i += 1
+
 print(f"A letra 'a' aparece {i} vezes na palavra.")
+
+
+# %%
+# ============================================================
+# FIM DA AULA
+# ============================================================
