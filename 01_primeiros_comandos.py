@@ -23,8 +23,9 @@
 # podemos utilizar várias linhas iniciadas por #.
 #
 # Também existem as aspas triplas (''' ou """), utilizadas
-# para criar strings de múltiplas linhas. Elas são comuns
-# na documentação de funções, classes e módulos.
+# para criar strings de múltiplas linhas. São frequentemente
+# utilizadas para documentar funções, classes e módulos
+# por meio das chamadas docstrings.
 
 
 # %%
@@ -124,3 +125,22 @@ print(
     "\te o resultado da multiplicação é:\t", 2 * 3
 )
 
+
+# %%
+# ============================================================
+# 7. UTILIZANDO F-STRINGS
+# ============================================================
+
+# O f-string (formatted string literal) permite inserir
+# variáveis e expressões diretamente dentro de uma string.
+#
+# Para utilizar esse recurso, adicionamos a letra f antes
+# das aspas e colocamos as expressões entre chaves {}.
+#
+# Isso facilita a combinação de textos e resultados,
+# deixando o código mais organizado e legível.
+
+print(
+    f"O resultado da soma é: {2 + 3} "
+    f"e o resultado da multiplicação é: {2 * 3}"
+)
