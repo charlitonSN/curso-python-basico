@@ -1,6 +1,6 @@
-# %%
+
 # ============================================================
-# INTRODUÇÃO AOS DICIONÁRIOS E TUPLAS
+# AULA 07 - INTRODUÇÃO AOS DICIONÁRIOS E TUPLAS
 # ============================================================
 
 # OBJETIVO:
@@ -50,7 +50,6 @@ dados_pessoais = {
 print(dados_pessoais)
 
 
-# %%
 # ============================================================
 # 3. ACESSANDO OS VALORES DO DICIONÁRIO
 # ============================================================
@@ -69,7 +68,6 @@ print(
 )
 
 
-# %%
 # ============================================================
 # 4. ACESSANDO VALORES DE LISTAS DENTRO DE DICIONÁRIOS
 # ============================================================
@@ -86,7 +84,6 @@ print(dados_pessoais['formacao'])
 print(dados_pessoais['formacao'][1])
 
 
-# %%
 # ============================================================
 # 5. ACESSANDO DICIONÁRIOS DENTRO DE LISTAS
 # ============================================================
@@ -120,7 +117,6 @@ print(dados_pessoais['empregos'][0]['nome'])
 print(dados_pessoais['empregos'][0]['cargo'])
 
 
-# %%
 # ============================================================
 # 6. ADICIONANDO E MODIFICANDO ELEMENTOS
 # ============================================================
@@ -137,7 +133,6 @@ dados_pessoais['idade'] = 28
 print(dados_pessoais)
 
 
-# %%
 # ============================================================
 # 7. ACESSANDO AS CHAVES, VALORES E PARES DO DICIONÁRIO
 # ============================================================
@@ -160,7 +155,6 @@ print(dados_pessoais.items())
 print(list(dados_pessoais.items()))
 
 
-# %%
 # ============================================================
 # 8. OUTROS MÉTODOS DOS DICIONÁRIOS
 # ============================================================
@@ -175,8 +169,6 @@ print(dados_pessoais.get('profissao'))
 
 print(dados_pessoais.get('profissao', 'Não informado'))
 
-
-# %%
 # update(): adiciona novas informações ou atualiza
 # valores de chaves que já existem.
 
@@ -187,8 +179,6 @@ dados_pessoais.update({
 
 print(dados_pessoais)
 
-
-# %%
 # pop(): remove uma chave e retorna o valor removido.
 
 estado = dados_pessoais.pop('estado')
@@ -196,30 +186,25 @@ estado = dados_pessoais.pop('estado')
 print(estado)
 print(dados_pessoais)
 
-
-# %%
 # clear(): remove todos os elementos do dicionário.
 
 # dados_pessoais.clear()
 
-
-# %%
 # copy(): cria uma cópia superficial do dicionário.
 
 copia_dados = dados_pessoais.copy()
 
 print(copia_dados)
 
-
-# %%
 # Verificando se uma chave existe no dicionário.
+
 print('nome' in dados_pessoais)
 
 # Verificando a quantidade de elementos do dicionário.
+
 print(len(dados_pessoais))
 
 
-# %%
 # ============================================================
 # 9. PERCORRENDO UM DICIONÁRIO COM FOR
 # ============================================================
@@ -232,22 +217,17 @@ print(len(dados_pessoais))
 for chave in dados_pessoais:
     print(chave)
 
-
-# %%
 # Percorrendo somente os valores.
 
 for valor in dados_pessoais.values():
     print(valor)
 
-
-# %%
 # Percorrendo as chaves e seus respectivos valores.
 
 for chave, valor in dados_pessoais.items():
     print(f'{chave}: {valor}')
 
 
-# %%
 # ============================================================
 # 10. INTRODUÇÃO ÀS TUPLAS
 # ============================================================
@@ -266,7 +246,6 @@ for chave, valor in dados_pessoais.items():
 # de dados.
 
 
-# %%
 # ============================================================
 # 11. CRIANDO UMA TUPLA
 # ============================================================
@@ -280,7 +259,6 @@ print(tupla)
 print(type(tupla))
 
 
-# %%
 # ============================================================
 # 12. ACESSANDO OS ELEMENTOS DA TUPLA
 # ============================================================
@@ -299,7 +277,6 @@ print(tupla[-1])
 print(tupla[-2])
 
 
-# %%
 # ============================================================
 # 13. FATIAMENTO (SLICING) EM TUPLAS
 # ============================================================
@@ -326,7 +303,6 @@ print(numeros[2:])
 print(numeros[::-1])
 
 
-# %%
 # ============================================================
 # 14. IMUTABILIDADE DAS TUPLAS
 # ============================================================
@@ -339,7 +315,6 @@ print(numeros[::-1])
 # tupla[0] = 1
 
 
-# %%
 # ============================================================
 # 15. TUPLAS COM APENAS UM ELEMENTO
 # ============================================================
@@ -355,8 +330,6 @@ valor = (10)
 
 print(type(valor))
 
-
-# %%
 # Isso é uma tupla.
 
 valor = (10,)
@@ -364,7 +337,6 @@ valor = (10,)
 print(type(valor))
 
 
-# %%
 # ============================================================
 # 16. TUPLAS COM LISTAS EM SEU INTERIOR
 # ============================================================
@@ -380,16 +352,12 @@ tupla = (5, 3, 'Charliton', [5, 3, 1, 10])
 
 print(tupla)
 
-
-# %%
 # Modificando um elemento da lista dentro da tupla.
 
 tupla[-1][0] = 0
 
 print(tupla)
 
-
-# %%
 # Adicionando um novo elemento à lista dentro da tupla.
 #
 # append(): adiciona um elemento ao final da lista.
@@ -401,7 +369,6 @@ tupla[-1].append(999)
 print(tupla)
 
 
-# %%
 # ============================================================
 # 17. PRINCIPAIS MÉTODOS DAS TUPLAS
 # ============================================================
@@ -418,7 +385,6 @@ print(numeros.count(20))
 print(numeros.index(30))
 
 
-# %%
 # ============================================================
 # 18. FUNÇÕES ÚTEIS PARA TRABALHAR COM TUPLAS
 # ============================================================
@@ -442,7 +408,6 @@ print(min(numeros))
 print(sum(numeros))
 
 
-# %%
 # ============================================================
 # 19. PERCORRENDO UMA TUPLA COM FOR
 # ============================================================
@@ -454,15 +419,12 @@ frutas = ('Maçã', 'Banana', 'Uva', 'Laranja')
 for fruta in frutas:
     print(fruta)
 
-
-# %%
 # Percorrendo os elementos utilizando os índices.
 
 for i in range(len(frutas)):
     print(frutas[i])
 
 
-# %%
 # ============================================================
 # 20. DESEMPACOTAMENTO DE TUPLAS (UNPACKING)
 # ============================================================
@@ -479,7 +441,6 @@ print(idade)
 print(curso)
 
 
-# %%
 # ============================================================
 # 21. DIFERENÇAS ENTRE LISTAS, TUPLAS E DICIONÁRIOS
 # ============================================================
@@ -496,20 +457,14 @@ print(curso)
 # Armazenam informações em pares de chave e valor.
 # São mutáveis e acessados por meio de chaves.
 
-
-# %%
 # Exemplo de lista.
 
 lista = [10, 20, 30]
 
-
-# %%
 # Exemplo de tupla.
 
 tupla = (10, 20, 30)
 
-
-# %%
 # Exemplo de dicionário.
 
 dicionario = {
@@ -519,7 +474,6 @@ dicionario = {
 }
 
 
-# %%
 # ============================================================
 # 22. APLICAÇÃO PRÁTICA: ANÁLISE DE DADOS
 # ============================================================
@@ -546,7 +500,6 @@ print(f'Faturamento total: R$ {total:,.2f}')
 print(f'Média mensal: R$ {media:,.2f}')
 
 
-# %%
 # ============================================================
 # FIM DA AULA
 # ============================================================

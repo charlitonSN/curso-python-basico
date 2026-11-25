@@ -9,7 +9,6 @@
 # por meio da função print().
 
 
-# %%
 # ============================================================
 # 1. COMENTÁRIOS EM PYTHON
 # ============================================================
@@ -28,24 +27,8 @@
 # por meio das chamadas docstrings.
 
 
-# %%
 # ============================================================
-# 2. ORGANIZAÇÃO DO CÓDIGO EM CÉLULAS
-# ============================================================
-
-# O marcador # %% permite dividir o código em células.
-# Cada célula pode ser executada separadamente em ambientes
-# compatíveis, como o VS Code com suporte a Python e Jupyter.
-#
-# Para executar uma célula no VS Code, podemos utilizar:
-#
-# Shift + Enter -> Executa a célula e avança para a próxima.
-# Ctrl + Enter  -> Executa a célula sem avançar.
-
-
-# %%
-# ============================================================
-# 3. PRIMEIRO COMANDO: HELLO WORLD
+# 2. PRIMEIRO COMANDO: HELLO WORLD
 # ============================================================
 
 # A função print() permite exibir informações na tela.
@@ -55,9 +38,8 @@
 print("Olá, mundo!")
 
 
-# %%
 # ============================================================
-# 4. UTILIZANDO PRINT() PARA EXIBIR RESULTADOS
+# 3. UTILIZANDO PRINT() PARA EXIBIR RESULTADOS
 # ============================================================
 
 # Além de textos, a função print() também permite exibir
@@ -66,9 +48,8 @@ print("Olá, mundo!")
 print(2 + 3)
 
 
-# %%
 # ============================================================
-# 5. EXIBINDO TEXTOS E RESULTADOS MATEMÁTICOS
+# 4. EXIBINDO TEXTOS E RESULTADOS MATEMÁTICOS
 # ============================================================
 
 # Podemos utilizar a função print() para combinar textos
@@ -80,7 +61,6 @@ print(2 + 3)
 print("O resultado da operação é:", 2 + 3)
 
 
-# %%
 # Também podemos apresentar mais de uma informação
 # na mesma chamada da função print().
 
@@ -90,9 +70,8 @@ print(
 )
 
 
-# %%
 # ============================================================
-# 6. CARACTERES DE ESCAPE
+# 5. CARACTERES DE ESCAPE
 # ============================================================
 
 # Os caracteres de escape permitem modificar a forma como
@@ -102,7 +81,6 @@ print(
 # \t -> Insere uma tabulação horizontal.
 
 
-# %%
 # UTILIZANDO \n PARA QUEBRAR LINHAS
 #
 # O caractere \n faz com que a informação seguinte
@@ -114,7 +92,6 @@ print(
 )
 
 
-# %%
 # UTILIZANDO \t PARA INSERIR TABULAÇÕES
 #
 # O caractere \t adiciona um espaçamento horizontal,
@@ -126,9 +103,8 @@ print(
 )
 
 
-# %%
 # ============================================================
-# 7. UTILIZANDO F-STRINGS
+# 6. UTILIZANDO F-STRINGS
 # ============================================================
 
 # O f-string (formatted string literal) permite inserir

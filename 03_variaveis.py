@@ -13,7 +13,6 @@
 # os valores e facilitar a realização dos cálculos.
 
 
-# %%
 # ============================================================
 # 1. CRIANDO E UTILIZANDO VARIÁVEIS
 # ============================================================
@@ -34,7 +33,6 @@ x = 4
 print("O resultado da expressão é:", a * (x ** 2) + b * x + c)
 
 
-# %%
 # ============================================================
 # 2. ACESSANDO E ALTERANDO VALORES DE VARIÁVEIS
 # ============================================================
@@ -45,7 +43,6 @@ print("O resultado da expressão é:", a * (x ** 2) + b * x + c)
 print(a)
 
 
-# %%
 # O valor de uma variável pode ser alterado durante a execução
 # do programa. Nesse caso, o novo valor substitui o anterior.
 
@@ -54,7 +51,6 @@ a = 10
 print(a)
 
 
-# %%
 # ============================================================
 # 3. PRINCIPAIS TIPOS DE DADOS
 # ============================================================
@@ -68,7 +64,6 @@ print(a)
 # bool  -> Valores booleanos (True ou False).
 
 
-# %%
 # NÚMEROS INTEIROS (int)
 # Representam números sem casas decimais.
 
@@ -77,7 +72,6 @@ z = 10
 print(z)
 
 
-# %%
 # NÚMEROS DECIMAIS (float)
 # Representam números com casas decimais.
 
@@ -86,7 +80,6 @@ y = 3.14
 print(y)
 
 
-# %%
 # TEXTOS (str)
 # São sequências de caracteres representadas entre aspas.
 
@@ -95,7 +88,6 @@ nome = "Charliton"
 print(nome)
 
 
-# %%
 # BOOLEANOS (bool)
 # Representam valores lógicos: verdadeiro (True) ou falso (False).
 
@@ -104,7 +96,6 @@ ativo = True
 print(ativo)
 
 
-# %%
 # ============================================================
 # 4. IDENTIFICANDO O TIPO DE DADO
 # ============================================================
@@ -118,7 +109,6 @@ print(type(nome))   # <class 'str'>
 print(type(ativo))  # <class 'bool'>
 
 
-# %%
 # ============================================================
 # 5. RECEBENDO INFORMAÇÕES COM INPUT()
 # ============================================================
@@ -135,7 +125,6 @@ idade = input("Digite sua idade: ")
 print("Idade informada:", idade)
 
 
-# %%
 # ============================================================
 # 6. CONVERSÃO DE TIPOS DE DADOS
 # ============================================================
@@ -149,7 +138,6 @@ print("Idade informada:", idade)
 # bool()  -> Converte um valor para booleano.
 
 
-# %%
 # CONVERSÃO PARA INTEIRO (int)
 # Permite converter uma entrada numérica para número inteiro.
 
@@ -158,7 +146,6 @@ idade = int(input("Digite sua idade: "))
 print("Sua idade é:", idade)
 
 
-# %%
 # CONVERSÃO PARA DECIMAL (float)
 # Permite receber números com casas decimais.
 
@@ -167,7 +154,6 @@ salario = float(input("Digite seu salário: "))
 print("Seu salário é:", salario)
 
 
-# %%
 # CONVERSÃO PARA TEXTO (str)
 # Transforma um valor em uma string.
 
@@ -176,7 +162,6 @@ numero = 10
 print("O número é:", str(numero))
 
 
-# %%
 # CONVERSÃO PARA BOOLEANO (bool)
 # A função bool() transforma valores em True ou False.
 #

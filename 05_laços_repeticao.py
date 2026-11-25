@@ -1,7 +1,6 @@
 
-# %%
 # ============================================================
-# INTRODUÇÃO AOS LAÇOS DE REPETIÇÃO
+# AULA 05 - LAÇOS DE REPETIÇÃO EM PYTHON
 # ============================================================
 
 # OBJETIVO:
@@ -10,7 +9,6 @@
 # esses conhecimentos em exemplos práticos e na calculadora.
 
 
-# %%
 # ============================================================
 # 1. LAÇO WHILE
 # ============================================================
@@ -39,7 +37,6 @@ while i < 5:
     i += 1  # Incrementa o valor de i em 1
 
 
-# %%
 # ============================================================
 # 2. PERCORRENDO UMA LISTA COM WHILE
 # ============================================================
@@ -56,7 +53,6 @@ while i < 5:
 # Como os índices começam em 0, utilizamos a condição
 # i < len(lista) para percorrer todas as posições.
 
-
 lista = [10, 25, 3, 80, 7]
 
 i = 0
@@ -70,7 +66,6 @@ while i < len(lista):
     # permitindo avançar para a próxima posição da lista.
 
 
-# %%
 # ============================================================
 # 3. CALCULADORA COM LAÇO WHILE
 # ============================================================
@@ -81,7 +76,6 @@ while i < len(lista):
 #
 # O comando break é utilizado para encerrar o laço quando
 # o usuário não desejar continuar utilizando a calculadora.
-
 
 while True:
 
@@ -137,7 +131,6 @@ while True:
         break  # Interrompe o laço while.
 
 
-# %%
 # ============================================================
 # 4. LAÇO FOR
 # ============================================================
@@ -161,7 +154,6 @@ for numero in lista_numeros:
     print(numero)
 
 
-# %%
 # ============================================================
 # 5. PERCORRENDO UMA STRING COM FOR
 # ============================================================
@@ -177,7 +169,6 @@ for caractere in palavra:
     print(caractere)
 
 
-# %%
 # ============================================================
 # 6. CONTANDO CARACTERES COM FOR E IF
 # ============================================================
@@ -191,7 +182,6 @@ for caractere in palavra:
 # A cada iteração, o for verifica um caractere.
 # Se o caractere for igual a "a", incrementamos o contador.
 
-
 i = 0
 
 for caractere in "banana":
@@ -201,7 +191,6 @@ for caractere in "banana":
 print(f"A letra 'a' aparece {i} vezes na palavra.")
 
 
-# %%
 # ============================================================
 # 7. FUNÇÃO RANGE()
 # ============================================================
@@ -242,7 +231,6 @@ for numero in range(0, 11, 2):
     print(numero)
 
 
-# %%
 # ============================================================
 # 8. TABUADA COM FOR E RANGE()
 # ============================================================
@@ -252,7 +240,6 @@ for numero in range(0, 11, 2):
 #
 # Neste exemplo, utilizamos range() para gerar os números
 # de 1 a 10 e realizar as multiplicações.
-
 
 num_tabuada = float(
     input("Qual tabuada você deseja ver? (Digite um número de 1 a 10): ")

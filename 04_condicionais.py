@@ -1,5 +1,4 @@
 
-# %%
 # ============================================================
 # AULA 04 - LÓGICA BOOLEANA E ESTRUTURAS CONDICIONAIS
 # ============================================================
@@ -13,7 +12,6 @@
 # e apresenta o resultado ao usuário.
 
 
-# %%
 # ============================================================
 # 1. INTRODUÇÃO À LÓGICA BOOLEANA
 # ============================================================
@@ -59,14 +57,14 @@
 # e não IS NULL ou IS NOT NULL.
 
 
-# %%
 # ============================================================
 # 2. EXEMPLOS DE EXPRESSÕES BOOLEANAS
 # ============================================================
 
 # O resultado de uma expressão booleana será True ou False.
 
-# Operadores de comparação:
+
+# OPERADORES DE COMPARAÇÃO:
 
 print(10 > 5)       # True
 print(10 < 5)       # False
@@ -75,19 +73,20 @@ print(10 != 5)      # True
 print(10 >= 10)     # True
 print(10 <= 5)      # False
 
-# Comparação entre textos:
+
+# COMPARAÇÃO ENTRE TEXTOS:
 
 print("charliton" == "charliton")  # True
 print("charliton" != "charliton")  # False
 
-# Operadores lógicos:
+
+# OPERADORES LÓGICOS:
 
 print(10 > 5 and 10 < 20)  # True
 print(10 > 5 or 10 < 5)    # True
 print(not 10 > 5)          # False
 
 
-# %%
 # ============================================================
 # 3. ESTRUTURAS CONDICIONAIS
 # ============================================================
@@ -122,7 +121,6 @@ print(not 10 > 5)          # False
 #     bloco de código
 
 
-# %%
 # ============================================================
 # 4. CALCULADORA SIMPLES
 # ============================================================

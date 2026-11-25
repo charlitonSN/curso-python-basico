@@ -9,7 +9,6 @@
 # na resolução de expressões matemáticas.
 
 
-# %%
 # ============================================================
 # 1. OPERADORES ARITMÉTICOS
 # ============================================================
@@ -18,28 +17,24 @@
 # operadores aritméticos. A seguir, veremos os principais.
 
 
-# %%
 # ADIÇÃO
 # O operador + é utilizado para somar valores.
 
 1 + 1
 
 
-# %%
 # SUBTRAÇÃO
 # O operador - é utilizado para subtrair valores.
 
 5 - 2
 
 
-# %%
 # MULTIPLICAÇÃO
 # O operador * é utilizado para multiplicar valores.
 
 3 * 4
 
 
-# %%
 # DIVISÃO
 # O operador / é utilizado para dividir valores.
 # O resultado será do tipo float, mesmo quando a divisão
@@ -48,7 +43,6 @@
 10 / 2
 
 
-# %%
 # POTENCIAÇÃO
 # O operador ** é utilizado para elevar um número a uma potência.
 # No exemplo, calculamos 2 elevado à terceira potência.
@@ -56,7 +50,6 @@
 2 ** 3
 
 
-# %%
 # RESTO DA DIVISÃO
 # O operador % retorna o resto de uma divisão.
 # No exemplo, 10 dividido por 3 possui resto igual a 1.
@@ -64,7 +57,6 @@
 10 % 3
 
 
-# %%
 # DIVISÃO INTEIRA
 # O operador // realiza a divisão e retorna o quociente
 # arredondado para baixo (floor).
@@ -72,7 +64,6 @@
 10 // 3
 
 
-# %%
 # RAIZ QUADRADA
 # Podemos calcular a raiz quadrada utilizando a potenciação.
 #
@@ -86,7 +77,6 @@
 16 ** (1/2)
 
 
-# %%
 # ============================================================
 # 2. UTILIZANDO PRINT() EM OPERAÇÕES MATEMÁTICAS
 # ============================================================
@@ -100,7 +90,6 @@
 print("O resultado da soma é:", 1 + 1)
 
 
-# %%
 # ============================================================
 # 3. APLICAÇÃO PRÁTICA: EQUAÇÃO DO SEGUNDO GRAU
 # ============================================================
@@ -126,8 +115,7 @@ print("O resultado da soma é:", 1 + 1)
 # x = 4
 
 
-# %%
-# Substituindo os valores na expressão:
+# SUBSTITUINDO OS VALORES NA EXPRESSÃO
 #
 # 2 * 4² + 5 * 4 + 3
 

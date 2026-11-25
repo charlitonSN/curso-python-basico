@@ -1,5 +1,6 @@
+
 # ============================================================
-# INTRODUÇÃO ÀS LISTAS EM PYTHON
+# AULA 06 - LISTAS EM PYTHON
 # ============================================================
 
 # OBJETIVO:
@@ -15,68 +16,75 @@
 #
 # As listas são definidas usando colchetes [] e os elementos
 # são separados por vírgulas.
-#
+
+
+# ============================================================
+# 1. CRIANDO LISTAS
+# ============================================================
+
 # Exemplos de criação de uma lista:
 
 minha_lista = [1, 2, 3, 4, 5]
+
 print(minha_lista)
 
 
-# %%
+# Uma lista também pode armazenar textos.
+
 minha_lista = ["maçã", "banana", "laranja"]
+
 print(minha_lista)
 
 
-# %%
 # A lista pode conter elementos de diferentes tipos,
 # como números, strings e valores booleanos.
 
 minha_lista = [1, "maçã", 3.14, True]
+
 print(minha_lista)
 
 
-# %%
-# Exemplo de lista aninhada (lista dentro de outra lista):
+# EXEMPLO DE LISTA ANINHADA:
+# Uma lista aninhada é uma lista dentro de outra lista.
 
 minha_lista = [1, 2, [3, 4], 5]
+
 print(minha_lista)
 
 
-# %%
-# Verificando o tipo da variável
+# ============================================================
+# 2. IDENTIFICANDO O TIPO DE DADO
+# ============================================================
+
+# A função type() permite identificar o tipo de dado
+# armazenado em uma variável.
 
 print(type(minha_lista))
 
 
-# %%
 # ============================================================
-# ACESSANDO ELEMENTOS DA LISTA
+# 3. ACESSANDO ELEMENTOS DA LISTA
 # ============================================================
 
-# Acessando elementos da lista usando índices.
+# Os elementos de uma lista podem ser acessados utilizando
+# seus índices.
 #
 # O índice do primeiro elemento é 0, o segundo é 1,
 # e assim por diante.
 #
-# Podemos acessar elementos individuais da lista usando
-# colchetes [] e o índice do elemento desejado.
+# Para acessar um elemento individual, utilizamos
+# colchetes [] e informamos o índice desejado.
+
+minha_lista = [10, 20, 30, 40, 50]
 
 print(minha_lista[0])  # Acessa o primeiro elemento
-
-
-# %%
-# Acessando o segundo elemento da lista
-
 print(minha_lista[1])  # Acessa o segundo elemento
 
 
-# %%
 # ============================================================
-# FATIAMENTO DE LISTAS (SLICING)
+# 4. FATIAMENTO DE LISTAS (SLICING)
 # ============================================================
 
-# Acessando mais de um elemento da lista usando fatiamento.
-#
 # O fatiamento permite acessar uma parte da lista,
 # especificando o índice inicial e o índice final.
 #
@@ -86,22 +94,19 @@ print(minha_lista[1])  # Acessa o segundo elemento
 print(minha_lista[1:4])  # Acessa os elementos de índice 1 a 3
 
 
-# %%
-# Podemos fatiar do início ou do final sem precisar
-# colocar o índice zero.
+# Podemos fatiar do início sem precisar informar
+# o índice inicial.
 
 print(minha_lista[:3])
 
 
-# %%
-# Acessando os quatro últimos elementos da lista
+# Acessando os quatro últimos elementos da lista.
 
 print(minha_lista[-4:])
 
 
-# %%
 # ============================================================
-# ACESSANDO ELEMENTOS COM ÍNDICES NEGATIVOS
+# 5. ACESSANDO ELEMENTOS COM ÍNDICES NEGATIVOS
 # ============================================================
 
 # Os índices negativos permitem acessar os elementos
@@ -114,22 +119,23 @@ print(minha_lista[-1])  # Acessa o último elemento
 print(minha_lista[-2])  # Acessa o penúltimo elemento
 
 
-# %%
 # ============================================================
-# ACESSANDO ELEMENTOS DE LISTAS ANINHADAS
+# 6. ACESSANDO ELEMENTOS DE LISTAS ANINHADAS
 # ============================================================
 
-# Acessando elementos da lista aninhada.
+# Para acessar elementos de uma lista aninhada, utilizamos
+# dois índices.
 #
 # O primeiro índice acessa a lista interna.
 # O segundo índice acessa o elemento dentro dela.
 
+minha_lista = [1, 2, [3, 4], 5]
+
 print(minha_lista[2][1])
 
 
-# %%
 # ============================================================
-# ALTERANDO ELEMENTOS DA LISTA
+# 7. ALTERANDO ELEMENTOS DA LISTA
 # ============================================================
 
 # As listas são mutáveis, portanto podemos alterar seus
@@ -139,44 +145,44 @@ print(minha_lista[2][1])
 # e atribuir um novo valor.
 
 minha_lista[2] = 10
+
 print(minha_lista)
 
 
-# %%
 # ============================================================
-# OPERAÇÕES MATEMÁTICAS COM LISTAS
+# 8. OPERAÇÕES MATEMÁTICAS COM LISTAS
 # ============================================================
 
 # Podemos fazer operações matemáticas com listas
 # que contenham elementos numéricos.
 
 lista2 = [0, 5, 6, 7, 1, 9, 15]
+
 print(lista2)
 
 
-# %%
 # SOMA DOS ELEMENTOS
 #
 # A função sum() realiza a soma de todos os elementos
 # numéricos da lista.
 
 soma = sum(lista2)
+
 print(soma)
 
 
-# %%
 # QUANTIDADE DE ELEMENTOS
 #
 # A função len() retorna a quantidade de elementos
 # existentes na lista.
 
 quantidade = len(lista2)
+
 print(quantidade)
 
 
-# %%
 # ============================================================
-# MEDIDAS DE TENDÊNCIA CENTRAL
+# 9. MEDIDAS DE TENDÊNCIA CENTRAL
 # ============================================================
 
 # MÉDIA
@@ -185,10 +191,10 @@ print(quantidade)
 # elementos pela quantidade de observações.
 
 media = sum(lista2) / len(lista2)
+
 print(f"A média é: {media:.2f}")
 
 
-# %%
 # MEDIANA
 #
 # A mediana representa o valor central de um conjunto
@@ -199,10 +205,10 @@ print(f"A média é: {media:.2f}")
 import statistics
 
 mediana = statistics.median(lista2)
+
 print(f"A mediana é: {mediana}")
 
 
-# %%
 # MODA
 #
 # A moda representa o valor que aparece com maior frequência
@@ -213,12 +219,12 @@ print(f"A mediana é: {mediana}")
 lista3 = [1, 2, 2, 3, 4, 4, 4, 5]
 
 moda = statistics.multimode(lista3)
+
 print(f"A moda é: {moda}")
 
 
-# %%
 # ============================================================
-# VALORES MÍNIMO E MÁXIMO
+# 10. VALORES MÍNIMO E MÁXIMO
 # ============================================================
 
 # A função min() retorna o menor valor da lista.
@@ -231,9 +237,8 @@ print(f"O valor mínimo é: {minimo}")
 print(f"O valor máximo é: {maximo}")
 
 
-# %%
 # ============================================================
-# RESUMO DAS OPERAÇÕES ESTATÍSTICAS
+# 11. RESUMO DAS OPERAÇÕES ESTATÍSTICAS
 # ============================================================
 
 print(f"""
@@ -249,9 +254,8 @@ Máximo: {max(lista2)}
 """)
 
 
-# %%
 # ============================================================
-# MÉTODOS DE MANIPULAÇÃO DE LISTAS
+# 12. MÉTODOS DE MANIPULAÇÃO DE LISTAS
 # ============================================================
 
 # Os métodos são recursos próprios das listas que permitem
@@ -261,9 +265,8 @@ Máximo: {max(lista2)}
 # utilizando o nome da lista seguido de um ponto (.).
 
 
-# %%
 # ============================================================
-# ADICIONANDO ELEMENTOS
+# 13. ADICIONANDO ELEMENTOS
 # ============================================================
 
 # APPEND()
@@ -278,7 +281,6 @@ lista.append(6)
 print(lista)
 
 
-# %%
 # INSERT()
 #
 # O método insert() permite adicionar um elemento em
@@ -293,21 +295,20 @@ lista.insert(2, 10)  # Adiciona 10 no índice 2
 print(lista)
 
 
-# %%
 # EXTEND()
 #
 # O método extend() permite adicionar vários elementos
 # de outra coleção ao final da lista.
 
 lista = [1, 2, 3]
+
 lista.extend([4, 5, 6])
 
 print(lista)
 
 
-# %%
 # ============================================================
-# REMOVENDO ELEMENTOS
+# 14. REMOVENDO ELEMENTOS
 # ============================================================
 
 # REMOVE()
@@ -322,7 +323,6 @@ lista.remove(3)
 print(lista)
 
 
-# %%
 # POP()
 #
 # O método pop() remove um elemento de acordo com seu índice.
@@ -339,7 +339,6 @@ print(f"Elemento removido: {removido}")
 print(lista)
 
 
-# %%
 # Removendo o último elemento sem informar o índice.
 
 lista = [1, 2, 3, 4, 5]
@@ -349,7 +348,6 @@ lista.pop()
 print(lista)
 
 
-# %%
 # CLEAR()
 #
 # O método clear() remove todos os elementos da lista,
@@ -362,9 +360,8 @@ lista.clear()
 print(lista)
 
 
-# %%
 # ============================================================
-# ORGANIZANDO ELEMENTOS
+# 15. ORGANIZANDO ELEMENTOS
 # ============================================================
 
 # SORT()
@@ -381,7 +378,6 @@ lista.sort()
 print(lista)
 
 
-# %%
 # Podemos utilizar o parâmetro reverse=True para organizar
 # os elementos em ordem decrescente.
 
@@ -392,7 +388,6 @@ lista.sort(reverse=True)
 print(lista)
 
 
-# %%
 # REVERSE()
 #
 # O método reverse() inverte a ordem atual dos elementos
@@ -408,9 +403,8 @@ lista.reverse()
 print(lista)
 
 
-# %%
 # ============================================================
-# LOCALIZANDO E CONTANDO ELEMENTOS
+# 16. LOCALIZANDO E CONTANDO ELEMENTOS
 # ============================================================
 
 # INDEX()
@@ -425,7 +419,6 @@ posicao = lista.index(30)
 print(f"O elemento está no índice: {posicao}")
 
 
-# %%
 # COUNT()
 #
 # O método count() retorna quantas vezes determinado
@@ -438,9 +431,8 @@ quantidade = lista.count(2)
 print(f"O número 2 aparece {quantidade} vezes.")
 
 
-# %%
 # ============================================================
-# COPIANDO LISTAS
+# 17. COPIANDO LISTAS
 # ============================================================
 
 # COPY()
@@ -460,9 +452,8 @@ print(f"Lista original: {lista_original}")
 print(f"Lista copiada: {lista_copia}")
 
 
-# %%
 # ============================================================
-# VERIFICANDO SE UM ELEMENTO EXISTE
+# 18. VERIFICANDO SE UM ELEMENTO EXISTE
 # ============================================================
 
 # O operador in verifica se determinado elemento está
@@ -476,7 +467,6 @@ print(30 in lista)  # Retorna True
 print(60 in lista)  # Retorna False
 
 
-# %%
 # O operador not in verifica se determinado elemento
 # NÃO está presente na lista.
 
@@ -484,9 +474,8 @@ print(60 not in lista)  # Retorna True
 print(30 not in lista)  # Retorna False
 
 
-# %%
 # ============================================================
-# RESUMO DOS PRINCIPAIS MÉTODOS
+# 19. RESUMO DOS PRINCIPAIS MÉTODOS
 # ============================================================
 
 # append()  -> Adiciona um elemento ao final da lista.
